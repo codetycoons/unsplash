@@ -157,9 +157,9 @@ div .cartHeader {
 .favItem{
   margin-top: 10px;
     padding: 10px;
-    background: #383b3e14;
+    // background: #383b3e14;
     height: auto;
-    border-left: 2px solid red;
+    // border-left: 2px solid red;
 }
 
 .display-flex-start{
@@ -167,6 +167,20 @@ div .cartHeader {
   //   justify-content: flex-start;
   //   flex-wrap: wrap;
   columns: 3;
+}
+
+@media screen and (max-width : 700px){
+  .display-flex-start{
+    columns: 2;
+    transition: all .2s linear;
+  }
+}
+
+@media screen and (max-width : 415px){
+  .display-flex-start{
+    columns: 1;
+    transition: all .2s linear;
+  }
 }
 
 .display-flex-start img{

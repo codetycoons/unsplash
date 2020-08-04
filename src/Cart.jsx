@@ -9,7 +9,7 @@ class Cart extends PureComponent {
 
   render() {
     let fav = "";
-    console.log("userData",this.props.userData)
+    console.log("userData", this.props.userData)
     if (this.props) {
       fav = this.props.userData;
       console.log("in render fav", fav);
@@ -28,29 +28,25 @@ class Cart extends PureComponent {
             <div className="cartHeader">
               <span>Favourites</span>
             </div>
-            <div>
-              {fav
-                // {
-                //   this.props.userData.fav.length > 0
-                ? fav.map(fav => (
-                  <Row key={fav.image.id}>
-                    <Col xs={12}>
-                      <div className="favItem">
-                        <span>{fav.image.id}</span>
-                        <div>
+            <div className="pad20">
+              <Row>
+                {fav
+                  ? fav.map(fav => (
+
+                    <Col xs={12} sm={6} key={fav.image.id}>
+                      <div className="pos-relative">
+                        <div className="fav-strip pad5">
+                          <span className="pad-5_10 border-rad10 pad10" onClick={() => this.props.onRemove(fav.image.id)}><i className="fa fa-times" aria-hidden="true"></i></span>
+                        </div>
+                        <div className="pad5">
                           <img src={fav.image.urls.small} />
                         </div>
                       </div>
                     </Col>
-                    <Col>
-                      <button onClick={() => this.props.onRemove(fav.image.id)}>
-                        Remove {fav.image.id}
-                      </button>
-                    </Col>
-                  </Row>
-                ))
-                : noData
-              }
+                  ))
+                  : noData
+                }
+              </Row>
             </div>
           </Col>
           <Col xs={12} lg={6}>

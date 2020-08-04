@@ -23,12 +23,12 @@ export class Header extends PureComponent {
                     <Link to="/">
                       <li>Home</li>
                     </Link>
-                    <Link to="ContactUs">
+                    {/* <Link to="ContactUs">
                       <li>Contact Us</li>
                     </Link>
                     <Link to="/AboutUs">
                       <li>About Us</li>
-                    </Link>
+                    </Link> */}
                     <Link to="/Cart">
                       <li>My Cart</li>
                     </Link>
