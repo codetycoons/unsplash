@@ -1,0 +1,229 @@
+.header{
+//  background: linear-gradient(to right, #2193b0, #6dd5ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// color:  white !important;
+// padding: 30px !important;
+// height: 60px;
+    // box-shadow: 0px 4px 7px grey;
+    // background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: linear-gradient(to right, #41295a, #2f0743); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px;
+    text-align: center;
+}
+
+ul{
+  margin: 0
+}
+li{
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.pad20{
+  padding: 20px;
+}
+
+.pad10{
+  padding: 10px;
+}
+
+.pad5{
+  padding: 5px;
+}
+
+.fav_collect{
+  // height: 50px;
+  //   // background: #ffffff94;
+  //   /* background: black; */
+  //   position: relative;
+  //   top: 70px;
+  //   right: -275px;
+  //   width: 100px;
+  //   border-radius: 5px;
+  //   overflow: hidden;
+    // color : red;
+
+    height: 50px;
+    /* background: black; */
+    position: absolute;
+    top: 25px;
+    // right: 15px;
+    /* width: 100px; */
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 8px;
+    display: none;
+}
+
+.boxFav{
+  color : red;
+  background: #ffffff94;
+  border-radius : 5px;
+  padding: 7px;
+  margin: 4px;
+  cursor: pointer;
+  // display: none;
+}
+
+.boxCollect{
+  color : #00000094;
+  background: #ffffff94;
+  border-radius : 5px;
+  padding: 7px;
+  margin: 4px;
+  cursor: pointer;
+  // display: none;
+}
+
+.boxFav:hover{
+  transition: 1s;
+  background: white;
+}
+
+.boxCollect:hover{
+  transition: 1s;
+  background: white;
+}
+
+.userLogo{
+  border-radius: 50%;
+}
+
+.pad10:hover .fav_collect{
+  display: block;
+}
+
+.userInfo{
+  position: relative;
+    bottom: 54px;
+    left: 10px;
+    padding: 5px;
+    background: white;
+}
+.imgDownload{
+  position: relative;
+    bottom: 54px;
+    right: -248px;
+    padding: 5px;
+    background: white;
+}
+
+.dwnldNInfo{
+  position: absolute;
+    bottom: 12px;
+    left: 28px;
+    width: 100%;
+    color: white;
+    // text-align: center;
+}
+
+.btnDownload{
+  padding: 5px;
+    color: #808080c9;
+    background: #ffffff94;
+    BORDER-RADIUS: 5PX;
+    opacity: 0;
+    cursor: pointer;
+   
+}
+
+.pad10:hover .btnDownload{
+opacity: 1;
+}
+
+.btnDownload:hover{
+  background : white;
+  transition: 2s;
+}
+
+.mainHeader{
+  padding: 20px;
+}
+
+.menu{
+  color : white;
+}
+
+div .cartHeader {
+  padding: 10px;
+    background: #007bff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: MONOSPACE;
+    color: white;
+}
+.favItem{
+  margin-top: 10px;
+    padding: 10px;
+    background: #383b3e14;
+    height: auto;
+    border-left: 2px solid red;
+}
+
+.display-flex-start{
+  // display: flex;
+  //   justify-content: flex-start;
+  //   flex-wrap: wrap;
+  columns: 3;
+}
+
+.display-flex-start img{
+  // flex: 2;
+    padding: 5px;
+    width: 100%;
+}
+
+.pos-relative:hover .fav-strip,.pos-relative:hover .fav-dw-strip{
+  display: block;
+}
+
+.fav-strip {
+  display: flex;
+    justify-content: flex-end;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display:none;
+    transition: all .2s linear;
+    overflow: hidden;
+}
+
+.fav-dw-strip {
+  display: flex;
+    justify-content: flex-end;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    display:none;
+    transition: all .2s linear;
+    overflow: hidden;
+}
+
+.pos-relative{
+  position: relative;
+}
+
+.marg-left20{
+  margin-left: 20px;
+}
+
+.pad-5_10{
+    // padding: 5px 10px;
+    background: #ffffff87;
+}
+
+.fav-strip span:hover , .fav-dw-strip span:hover{
+  background: white;
+} 
+
+.border-rad10{
+  border-radius: 5px;;
+}

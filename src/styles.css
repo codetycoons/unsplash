@@ -1,0 +1,13 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center; 
+} */
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.App {
+  height: 100vh;
+}

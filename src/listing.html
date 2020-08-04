@@ -1,0 +1,60 @@
+<Row className="pad20">
+    {imageData.map(data =>
+      data ? (
+        <Col xs={12} lg={4} sm={6} md={4} key={data.id}>
+          <div className="pad10">
+            <div />
+            <div className="fav_collect">
+              <span
+                className="boxFav"
+                onClick={() => this.props.addFav(data.id)}
+              >
+                <FontAwesomeIcon icon={faHeart} />
+              </span>
+              <span
+                className="boxCollect"
+                onClick={() => this.props.addCollect(data.id)}
+              >
+                <FontAwesomeIcon icon={faPlus} />
+                &nbsp;Collect
+              </span>
+            </div>
+            {/* {fav_collectJSX} */}
+            <div>
+              <img src={data.urls.small} />
+            </div>
+            <div />
+            {/* {userInfoJSX} */}
+            {/* {imgDownloadJSX} */}
+            <Row className="dwnldNInfo">
+              <Col xs={6} lg={9} sm={8} md={9} className="pad10">
+                <div style={{ display: "inline-flex" }}>
+                  <div style={{ "marginRight": "5px" }}>
+                    <img
+                      src={data.user.profile_image.small}
+                      className="userLogo"
+                    />
+                  </div>
+                  <div>
+                    <a>{data.user.first_name}</a>
+                    <br />
+                    <a>{data.user.first_name}</a>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={4} lg={3} sm={4} md={3} className="pad10">
+                <a
+                  className="btnDownload"
+                  href={data.links.download_location}
+                  download
+                >
+                  <FontAwesomeIcon icon={faDownload} />
+                </a>
+              </Col>
+            </Row>
+          </div>
+        </Col>
+      ) : null
+    )}
+    {/* { imageData ? ( imageData.map(data => <div key={data.id}>{data}</div>)) : (null)} */}
+  </Row>
